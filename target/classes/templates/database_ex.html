@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <title>Database</title>
+</head>
+<body>
+<ul class="nav">
+    <li><a href="/">Home</a> </li>
+    <li><a href="/About_Me">About Me</a> </li>
+    <li><a href="/database_ex">Database Example</a></li>
+    <li><a href="/personal_projects">Personal Projects</a></li>
+</ul>
+<h1>Database goes here</h1>
+
+<div id="table_header" class="container">
+    <table id="persons" class="center">
+        <tr>
+            <th>Names</th>
+        </tr>
+        <tr th:each="person: ${personList}">
+            <td th:text = ${person.name}>Person's Name</td>
+        </tr>
+    </table>
+</div>
+
+<form action="/database_ex" method="post">
+    <br>
+    <input type="text" name="name"><br>
+    <input type="submit" value="Submit"><br>
+</form>
+
+<div id="data_explain" class="container">
+    <p>
+        This is a working database happening in the backend. Go ahead and submit your name on the wall!
+        The name will then be inserted into the database. Wanna see the innards? Click the json button
+        to receive a json get response. The proof is in the pudding.
+    </p>
+</div>
+
+<form action="/database_ex/all" method="get">
+    <input type="submit" value="JSON">
+</form>
+
+
+</body>
+</html>

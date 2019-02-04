@@ -1,0 +1,217 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul.nav {
+    align-content: baseline;
+    text-align: center;
+    background-color: darkgrey;
+    list-style-type: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 10px 10px -5px grey;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li {
+    background-color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.nav li:hover {
+    background-color: gray;
+}
+/*Home page*/
+div.description {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: darkgrey;
+    box-shadow: 10px 10px 5px grey;
+}
+
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
+}
+
+-webkit-@keyframes slideLeft {
+    to {transform: translate(-200%)}
+        }
+
+@keyframes slideLeft {
+    to {transform: translate(-200%)}
+}
+
+div.rotate, img.rotate {
+    border-radius: 50px;
+    alignment: center;
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    background-color: gray;
+    -webkit-animation: rotate360 7s 1s infinite linear;
+}
+
+/*About me page*/
+div.aboutme {
+    margin: auto;
+    height: auto;
+    width: 25%;
+    background-color: darkgrey;
+    box-shadow: 10px 10px 5px grey;
+}
+
+div.aboutme p {
+    text-align: center;
+    padding: 10px;
+}
+
+/*DataBASE page*/
+#table_header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: 200px;
+    overflow: scroll;
+}
+
+#data_explain {
+    margin-left:auto;
+    margin-right: auto;
+    width: 35%;
+    height:auto;
+    overflow: hidden;
+}
+
+#data_explain p {
+    padding: 15px;
+}
+
+#project_explain {
+    margin-left:auto;
+    margin-right: auto;
+}
+
+#persons {
+    width: 85%;
+    border-collapse: collapse;
+    background-color: lightgray;
+}
+
+#persons tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#persons th {
+    height: 40px;
+}
+
+#persons.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+form, input {
+    padding: 10px;
+}
+
+/*This is for the Personal projects page */
+
+#personal_explain h3 {
+    text-align: left;
+    padding-left: 50px;
+}
+
+#personal_explain.container {
+    margin-right: auto;
+    width: 100%;
+}
+
+div.container p {
+    padding: 25px;
+    text-align: left;
+}
+
+div.container img {
+    width: 50%;
+    height: 50%;
+    float: right;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+div.gallery {
+    border: 1px solid #ccc;
+    background-color: darkgrey;
+    margin-bottom: 50px;
+    box-shadow: 10px 10px 5px grey;
+    /*border-style: hidden;*/
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
