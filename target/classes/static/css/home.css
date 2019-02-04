@@ -86,6 +86,12 @@ div.aboutme p {
     padding: 10px;
 }
 
+@media only screen and (max-width: 700px) {
+    div.aboutme {
+        width: 100%;
+    }
+}
+
 /*DataBASE page*/
 #table_header {
     margin-left: auto;
@@ -101,6 +107,12 @@ div.aboutme p {
     width: 35%;
     height:auto;
     overflow: hidden;
+}
+
+@media only screen and (max-width: 700px) {
+    #data_explain {
+        width: 100%;
+    }
 }
 
 #data_explain p {
@@ -184,6 +196,17 @@ div.gallery img {
 
 div.desc {
     padding: 15px;
+    text-align: center;
+}
+
+div.footer {
+    position: fixed;
+    position: -ms-device-fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkgrey;
     text-align: center;
 }
 
