@@ -1,9 +1,5 @@
 package com.jp.sped.data.entity;
 
-import org.hibernate.annotations.ColumnDefault;
-import org.hibernate.annotations.Type;
-import org.hibernate.annotations.TypeDef;
-
 import javax.persistence.*;
 @Entity
 public class Person {
