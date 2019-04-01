@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="~{layouts/master}">>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +10,7 @@
     <title>Projects</title>
 </head>
 <body>
-<ul class="nav">
-    <li><a href="/">Home</a> </li>
-    <li><a href="/About_Me">About Me</a> </li>
-    <li><a href="/database_ex">Database Example</a></li>
-    <li><a href="/personal_projects">Personal Projects</a></li>
-</ul>
+<div layout:fragment="content">
 <h1>Personal Projects</h1>
 
 <div id="project_explain">
@@ -85,6 +83,6 @@
     You can see my Github account along with all of my projects on Github here:
     <a href="https://github.com/SouthStarBinary">Github</a>
 </div>
-
+</div>
 </body>
 </html>

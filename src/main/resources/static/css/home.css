@@ -94,6 +94,7 @@ div.aboutme p {
 
 /*DataBASE page*/
 #table_header {
+    margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
     width: 25%;

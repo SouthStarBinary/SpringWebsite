@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="~{layouts/master}">">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +10,17 @@
     <title>Database</title>
 </head>
 <body>
-<ul class="nav">
-    <li><a href="/">Home</a> </li>
-    <li><a href="/About_Me">About Me</a> </li>
-    <li><a href="/database_ex">Database Example</a></li>
-    <li><a href="/personal_projects">Personal Projects</a></li>
-</ul>
-<h1>Database goes here</h1>
-
+<div layout:fragment="content">
 <div id="table_header" class="container">
     <table id="persons" class="center">
         <tr>
             <th>Names</th>
         </tr>
         <tr th:each="person: ${personList}">
-            <td th:text = ${person.name}>Person's Name</td>
+            <td th:text = "${person.name}">Person's Name</td>
         </tr>
     </table>
 </div>
-
 <form action="/database_ex" method="post">
     <br>
     <input type="text" name="name"><br>
@@ -43,7 +38,6 @@
 <form action="/database_ex/all" method="get">
     <input type="submit" value="JSON">
 </form>
-
-
+</div>
 </body>
 </html>

@@ -1,5 +1,0 @@
-com\jp\sped\data\entity\Person.class
-com\jp\sped\web\application\SpedController.class
-com\jp\sped\web\application\DatabaseController.class
-com\jp\sped\SpedWebApplication.class
-com\jp\sped\data\repos\PersonRepository.class

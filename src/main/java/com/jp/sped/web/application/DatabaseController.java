@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
-@RequestMapping("database_ex")
+@RequestMapping("/database_ex")
 public class DatabaseController {
 
     @Autowired
@@ -32,7 +32,7 @@ public class DatabaseController {
     }
 
     @PostMapping
-    public @GetMapping String sendDataBaseEx(@RequestParam String name, Model model) {
+    public String sendDataBaseEx(@RequestParam String name, Model model) {
         Person person = new Person();
         person.setName(name);
         personRepository.save(person);

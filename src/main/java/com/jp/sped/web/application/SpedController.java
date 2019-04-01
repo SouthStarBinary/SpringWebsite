@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SpedController {
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public String getHome () {
         return "index";
     }
